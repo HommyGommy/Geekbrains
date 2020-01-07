@@ -89,3 +89,72 @@ for i in new_list:
 fin_dict['ед'] = list(set(fin_dict['ед']))
 
 print(fin_dict)
+
+
+# homework_1
+# task 1
+
+num = 5
+float = 5.7
+string = 'hello'
+bool = True
+
+print(num, float, string, bool)
+
+input_num = input('Укажите число: ')
+input_str = input('Укажите  строку: ')
+print(input_num, input_str)
+
+
+# task 2
+
+import time
+seconds = input('Введите количество секунд: ')
+answer = time.strftime('%H:%M:%S',  time.gmtime(seconds))
+
+print(answer)
+
+# task 3
+
+n = input('Введите число: ')
+result = n + int(str(n) + str(n)) + int(str(n) + str(n) + str(n))
+print(result)
+
+# task 4
+
+number = int(input('Введите число: '))
+r = -1
+while number > 10:
+    d = number % 10
+    number //= 10
+    if d > r:
+        r = d
+print(r)
+
+# task 5
+
+revenue = int(input('Укажите выручку фирмы: '))
+cost = int(input('Укажите издержки фирмы: '))
+
+profit = revenue - cost
+loss = cost - revenue
+
+if revenue > cost:
+    print('Прибыль фирмы равна', profit)
+    print('Рентабельность фирмы равна', round(profit/revenue, 2))
+elif revenuew < cost:
+    print('Убыток фирмы равен', loss)
+
+employees = input('Сколько сотрудников в фирме? ')
+print('Прибыль в расчете на одного сотрудника равна', profit/employees)
+
+# task 6
+
+a = 2
+b = 3
+counter = 0
+
+while a < b:
+    a *= 1.1
+    counter += 1
+print(int(counter) + 1)
