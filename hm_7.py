@@ -21,5 +21,3 @@ m1 = Matrix(l1)
 m2 = Matrix(l2)
 m1.clean()
 m2.clean()
-
-l1 + l2
